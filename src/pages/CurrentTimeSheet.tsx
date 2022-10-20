@@ -57,7 +57,7 @@ const CurrentTimeSheet = () => {
         })()
 
         const getJson = async () => {
-            await httpClient.get(host + '/getLatestAttendance')
+            await httpClient.get("//" + host + '/getLatestAttendance')
                 .then(function (response) {
                     setTableData(response.data);
                 })
