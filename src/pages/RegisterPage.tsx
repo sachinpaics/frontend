@@ -100,12 +100,12 @@ const RegisterPage: React.FC = () => {
                     <Divider type="vertical" />
                     <Input size="small" placeholder="Last Name" value={last_name} onChange={(e) => setLastname(e.target.value)} prefix={<UserOutlined></UserOutlined>} />
                     <Divider type="vertical" />
-                    <Input size="small" placeholder="input email" value={email} onChange={(e) => setEmail(e.target.value)} prefix={<MailOutlined />} />
+                    <Input size="small" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} prefix={<MailOutlined />} />
                     <div>
                         <br />
                         <Input.Password
                             name='password'
-                            placeholder="input password"
+                            placeholder="Password"
                             prefix={<SecurityScanOutlined />}
                             iconRender={visible => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
                             onChange={inputChange}

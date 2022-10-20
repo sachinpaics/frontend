@@ -38,11 +38,7 @@ const CurrentTimeSheet = () => {
 
     var setTableConfig = {
         method: 'post',
-<<<<<<< HEAD
-        url: 'https://' + host + '/setAttendance',
-=======
-        url: 'http://' + host + '/setAttendance',
->>>>>>> 7f571e60a (added again)
+        url: host + '/setAttendance',
         data: tableData
     };
 
@@ -61,11 +57,7 @@ const CurrentTimeSheet = () => {
         })()
 
         const getJson = async () => {
-<<<<<<< HEAD
-            await httpClient.get('https://' + host + '/getLatestAttendance')
-=======
-            await httpClient.get('http://' + host + '/getLatestAttendance')
->>>>>>> 7f571e60a (added again)
+            await httpClient.get(host + '/getLatestAttendance')
                 .then(function (response) {
                     setTableData(response.data);
                 })
@@ -283,8 +275,8 @@ const CurrentTimeSheet = () => {
                 <Title level={4}>Please make sure you update the timesheet for the week, {user.name}</Title>
             ) : (
                 <div>
-                    Are you logged in?
-                </div>
+                    Loading...
+                   </div>
             )}
             {total !== 0 ? (
                 <Form form={form} onFinish={onFinish}>

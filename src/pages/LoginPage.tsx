@@ -17,11 +17,8 @@ const LoginPage: React.FC = () => {
             "password": encodedPass
         }
         try {
-<<<<<<< HEAD
-            await httpClient.post("https://" + host + "/login", data)
-=======
             await httpClient.post("//" + host + "/login", data)
->>>>>>> 7f571e60a (added again)
+
             window.location.href = "/"
 
         }
@@ -53,8 +50,4 @@ const LoginPage: React.FC = () => {
     )
 }
 
-<<<<<<< HEAD
 export default LoginPage
-=======
-export default LoginPage
->>>>>>> 7f571e60a (added again)

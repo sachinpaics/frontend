@@ -15,11 +15,7 @@ const App = () => {
     const bottomCenter: TablePaginationPosition = ('bottomCenter');
 
     const logOutUser = async () => {
-<<<<<<< HEAD
-        await httpClient.post("https://" + host + "/logout")
-=======
         await httpClient.post("//" + host + "/logout")
->>>>>>> 7f571e60a (added again)
         window.location.href = "/"
     }
 
@@ -27,11 +23,7 @@ const App = () => {
 
         (async () => {
             try {
-<<<<<<< HEAD
-                const resp = await httpClient.get("https://" + host + "/@me")
-=======
                 const resp = await httpClient.get("//" + host + "/@me")
->>>>>>> 7f571e60a (added again)
                 setUser(resp.data)
             }
 
@@ -42,11 +34,7 @@ const App = () => {
         })()
 
         const getJson = async () => {
-<<<<<<< HEAD
-            await httpClient.get('https://' + host + '/getAttendance')
-=======
-            await httpClient.get('http://' + host + '/getAttendance')
->>>>>>> 7f571e60a (added again)
+            await httpClient.get("//" + host + '/getAttendance')
                 .then(function (response) {
                     setTableData(response.data);
                 })
@@ -98,7 +86,7 @@ const App = () => {
                 <Title level={2}>Old Records</Title>
             ) : (
                 <div>
-                    Are you logged in?
+                    Loading...
                 </div>
             )}
             {total !== 0 ? (
@@ -138,8 +126,4 @@ const App = () => {
     )
 }
 
-<<<<<<< HEAD
 export default App
-=======
-export default App
->>>>>>> 7f571e60a (added again)

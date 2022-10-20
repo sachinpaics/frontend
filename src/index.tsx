@@ -14,15 +14,15 @@ import { Typography } from 'antd';
 
 // export const host = '192.168.29.216:5000'
 // let hostname = window.location.host
-
-<<<<<<< HEAD
+//let protocol = "http://"
 //let hostname = 'localhost'
+
 //export const host = hostname + ':5000'
 
-=======
->>>>>>> 7f571e60a (added again)
 let hostname = 'timesheet-backend-app.herokuapp.com'
 export const host = hostname //+ ':5000'
+
+
 
 export const { Title } = Typography;
 

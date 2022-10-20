@@ -17,11 +17,7 @@ const LandingPage = () => {
     const [user, setUser] = useState<User | null>(null)
 
     const logOutUser = async () => {
-<<<<<<< HEAD
-        await httpClient.post("https://" + host + "/logout")
-=======
         await httpClient.post("//" + host + "/logout")
->>>>>>> 7f571e60a (added again)
         window.location.href = "/"
     }
 
@@ -33,11 +29,7 @@ const LandingPage = () => {
 
         (async () => {
             try {
-<<<<<<< HEAD
-                const resp = await httpClient.get("https://" + host + "/@me")
-=======
                 const resp = await httpClient.get("//" + host + "/@me")
->>>>>>> 7f571e60a (added again)
 
                 setUser(resp.data)
             }
@@ -90,8 +82,4 @@ const LandingPage = () => {
     )
 
 }
-<<<<<<< HEAD
 export default LandingPage
-=======
-export default LandingPage
->>>>>>> 7f571e60a (added again)
