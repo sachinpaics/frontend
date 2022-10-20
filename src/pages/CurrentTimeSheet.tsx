@@ -38,7 +38,7 @@ const CurrentTimeSheet = () => {
 
     var setTableConfig = {
         method: 'post',
-        url: host + '/setAttendance',
+        url: "//" + host + '/setAttendance',
         data: tableData
     };
 
