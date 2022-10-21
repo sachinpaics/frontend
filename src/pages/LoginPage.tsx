@@ -34,10 +34,10 @@ const LoginPage: React.FC = () => {
         <div style={{ textAlign: "center", padding: "100px", width: "500px", marginLeft: "450px" }}>
             <h1>Log into your account</h1>
             <Form >
-                <Input size="small" placeholder="input email" onChange={(e) => setEmail(e.target.value)} prefix={<UserOutlined></UserOutlined>} />
+                <Input size="small" placeholder="Email" onChange={(e) => setEmail(e.target.value)} prefix={<UserOutlined></UserOutlined>} />
                 <Divider type="vertical" />
                 <Input.Password
-                    placeholder="input password"
+                    placeholder="Password"
                     prefix={<SecurityScanOutlined />}
                     iconRender={visible => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
                     value={password} onChange={(e) => setPassword(e.target.value)}
